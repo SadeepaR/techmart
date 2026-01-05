@@ -21,6 +21,8 @@ const ProductScreen = () => {
           <Image src={product.image} alt={product.name} fluid />
         </Col>
 
+        
+
         <Col md={4}>
           <ListGroup variant="flush">
             <ListGroup.Item>
@@ -62,12 +64,9 @@ const ProductScreen = () => {
                 </Row>
               </ListGroup.Item>
 
-              <ListGroup.Item>
-                <Button className="btn-block" type="button" disabled={product.countInStock === 0}>
-                  Add To Cart
-                </Button>
-              </ListGroup.Item>
-            </ListGroup>
+
+
+
           </Card>
         </Col>
       </Row>
