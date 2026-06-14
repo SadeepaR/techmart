@@ -13,6 +13,11 @@ app.get('/api/products',( req,res)=>{
     res.json(products)
 });
 
+app.get('/api/products/:id',(req,res)=>{
+  const requestedProduct = products.find((product)=>product._id === req.params.id);
+  res.json(requestedProduct); 
+});
+
 app.listen(port,()=>{
     console.log(`Server is running on port ${port}`);
 }); 
